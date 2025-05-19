@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dress4Weather</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dress4Weather 👗🌦️</h1>
+
+    <form id="weatherForm">
+      <label>Temperatura (°C):
+        <input type="number" id="temperature" required />
+      </label>
+      <label>Está chovendo?
+        <select id="rain">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </label>
+      <label>Vento forte?
+        <select id="wind">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </label>
+      <button type="submit">Ver sugestão</button>
+    </form>
+
+    <div id="suggestion" class="suggestion"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
